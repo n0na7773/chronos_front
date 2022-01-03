@@ -1,0 +1,202 @@
+$magenta: #DA174F;
+$sub-magenta: #E95128;
+$orange: #F08827;
+$yellow: #F3C32A;
+$white: #F3F3E9;
+.Burger {
+    display: block;
+    margin: 5px 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-left: 10px;
+}
+.BurgerMenuEnterActive {
+    animation: growDown 200ms ease-in-out forwards;
+    transform-origin: top center;
+
+    @keyframes growDown {
+        0% {
+            transform: scaleY(0)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    }
+}
+
+.BurgerMenuExit {
+    animation: growUp 200ms ease-in-out forwards;
+    transform-origin: top center;
+
+    @keyframes growUp {
+        0% {
+            transform: scaleY(1)
+        }
+        100% {
+            transform: scaleY(0)
+        }
+    }
+}
+.BurgerMenuExitActive {
+
+}
+
+
+.BurgerMenu {
+    overflow: hidden;
+    position: absolute;
+    top: 83px;
+    width: 30%;
+    z-index: 10;
+
+    .Nav {
+        min-height: 80px;
+        padding: 0;
+        margin-left: 30px;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        li {
+            font-weight: 400;
+            transition: all 0.2s ease;
+            padding-bottom: 5px;
+            display: flex;
+            flex-flow: column;
+            margin-top: 10px;
+        }
+
+        li:hover {
+            opacity: .6;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            font-size: 16px;
+        }
+
+        .Active a {
+            color: $magenta;
+        }
+
+        .FuncSubMenuEnterActive {
+            animation: growDown 200ms ease-in-out forwards;
+            transform-origin: top center;
+        
+            @keyframes growDown {
+                0% {
+                    transform: scaleY(0)
+                }
+                100% {
+                    transform: scaleY(1)
+                }
+            }
+        }
+        .FuncSubMenuExit {
+            animation: growUp 200ms ease-in-out forwards;
+            transform-origin: top center;
+        
+            @keyframes growUp {
+                0% {
+                    transform: scaleY(1)
+                }
+                100% {
+                    transform: scaleY(0)
+                }
+            }
+        }
+        .FuncSubMenu {
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            list-style: none;
+            margin-left: 20px;
+            padding: 10px 0px;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            box-sizing: border-box;
+            border-radius: 12px;
+            box-shadow: 0px 5px 45px rgba(151, 175, 227, 0.1);
+            
+            a {
+                color: #5E81FE;
+                opacity: 1;
+                font-size: 14px;
+                margin: 7px 10px;
+    
+                &:hover {
+                    opacity: 0.6;
+    
+                }
+            }
+        }
+    }
+
+}
+.ButtonsDiv {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    
+    Button {
+        margin: 10px 10px 10px 0px;
+        cursor: pointer;
+        font-size: 17px;
+        transition: 0.1s;
+        border-radius: 6px;
+        background-clip: padding-box;
+        background-color: white ;
+        position: relative;
+        box-sizing: border-box;
+        color: #3D4F9F;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    .SignIn {
+        padding: 0.5rem 2rem;
+        border: 2px solid #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #D2E1FF;
+        }
+    }
+    .SignUp {
+        padding: 0.5rem 0.75rem;
+        border: 2px solid #D2E1FF;
+        background: #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #b4cdff;
+        }
+    
+    }
+    .Logout {
+        padding: 0.5rem 1rem;
+        border: 2px solid #D2E1FF;
+        background: #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #b4cdff;
+        }
+    }
+    .Profile {
+        padding: 0.5rem 1rem;
+        border: 2px solid #D2E1FF;
+    
+        &:hover,
+        &:active {
+            background: #D2E1FF;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+$main-text-color: #3d4f9f;
+$sub-text-color: #697ca6;
+$background_color: #a4bff7;
+$magenta: #DA174F;
+$sub-magenta: #E95128;
+$orange: #F08827;
+$yellow: #F3C32A;
+$white: #F3F3E9;
+
+.fc {
+    width: 100%;
+    outline: none;
+}
+.fc .fc-button-primary {
+    background-color: $sub-magenta;
+    border: 0;
+}
+.fc .fc-col-header-cell-cushion {
+    color: black;
+}
+.fc .fc-button-primary:hover {
+    background-color: $magenta;
+    outline: none;
+} 
+.fc .fc-event-time {
+    color: black;
+}
+.fc .fc-button-primary.fc-today-button:disabled {
+    background-color: $background_color;
+    color:$sub-text-color;
+}
+.fc .fc-button-primary.fc-today-button {
+    color: white;
+}
+.fc-toolbar-title {
+    color: black;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: $sub-magenta;
+}
+
+.fc .fc-daygrid-day.fc-day:hover {
+    cursor: pointer;
+    background-color: $orange;
+}
+
+.fc-event-title {
+    padding: 0 0.25em;
+    color: black;
+    font-size: 14px;
+}
+
+.fc-daygrid-event-dot {
+    margin: 0 0.35em;
+}
+
+// .fc-event-time {
+//     display: none;
+// }

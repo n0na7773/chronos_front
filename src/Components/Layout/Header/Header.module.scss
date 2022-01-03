@@ -1,0 +1,111 @@
+$magenta: #DA174F;
+$sub-magenta: #E95128;
+$orange: #F08827;
+$yellow: #F3C32A;
+$white: #F3F3E9;
+
+.Header {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x:hidden;
+    background-color: $orange;
+}
+.PizzaImg {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 63px;
+    right: 0px;
+    z-index: 0;
+}
+.LeftBox {
+    margin-left: 5vw;
+    min-width: 35vw;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: left;
+
+    .Logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        a {
+            color: black;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .LogoText {
+        font-family: "Comfortaa";
+        font-size: 1.3em;
+        margin-left: 13px;
+       
+    }
+}
+.RightBox {
+    margin-right: 5vw;
+}
+.Button {
+    width: 100px;
+    padding: 0.35em;
+    margin: 10px 10px 10px 0px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.1s;
+    border-radius: 6px;
+    background-clip: padding-box;
+    background-color: white ;
+    position: relative;
+    box-sizing: border-box;
+    color: $white;
+    text-shadow: 0px 0px 2px #e6e6e6;
+
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.SignIn {
+    border: 2px solid $sub-magenta;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+        background: $magenta;
+    }
+}
+.SignUp {
+    border: 2px solid $sub-magenta;
+    background: $sub-magenta;
+
+    &:hover,
+    &:active {
+        background: $magenta;
+    }
+}
+.Logout {
+    border: 2px solid $sub-magenta;
+    background: $sub-magenta;
+
+    &:hover,
+    &:active {
+        background: $magenta;
+    }
+}
+.Profile {
+    border: 2px solid $sub-magenta;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+        background: $magenta;
+    }
+
+}

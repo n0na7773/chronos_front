@@ -1,0 +1,227 @@
+$magenta: #DA174F;
+$sub-magenta: #E95128;
+$orange: #F08827;
+$yellow: #F3C32A;
+$white: #F3F3E9;
+
+.ProfileDiv {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  min-width: 270px;
+  width: 90%;
+  max-width: 700px;
+  min-height: 400px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: $yellow;
+  box-shadow: 0px 5px 45px rgba(223, 95, 10, 0.3);
+  border-radius: 12px;
+
+  .TopDiv {
+    width: 100%;
+    background: $yellow;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .FullName {
+      margin: 20px 0em 20px 25px;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+
+      color: black;
+
+      text-shadow: 0px 0px 5px #e6e6e6;
+    }
+
+    .Email {
+      margin: 20px 25px 20px 0px;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+
+      color: black;
+
+      text-shadow: 0px 0px 5px #e6e6e6;
+    }
+  }
+
+  .BottomDiv {
+    width: 100%;
+    min-height: inherit;
+    background: transparent;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    .TopInfoDiv {
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+
+      .LeftInfoBlock {
+        margin-left: 5%;
+        margin-top: 27px;
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        box-sizing: border-box;
+
+       
+        .EditProfile {
+          display: flex;
+
+          flex-flow: column;
+          input {
+            max-width: 250px;
+            background: #ffffff;
+            border: 1px solid #d2e1ff;
+            box-sizing: border-box;
+            border-radius: 6px;
+            padding: 7px 9px;
+            overflow: hidden;
+            font-weight: 400;
+            font-size: 16px;
+            color: $magenta;
+
+            &::placeholder {
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: -0.015em;
+              color: $magenta;
+              opacity: 0.39;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+          .EmailChange {
+            margin-top: 20px;
+          }
+        }
+        span {
+          margin-bottom: 17px;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.05em;
+
+          color: black;
+
+          text-shadow: 0px 0px 5px #e6e6e6;
+        }
+      }
+
+      .RightInfoBlock {
+        margin-top: 13px;
+        width: 40%;
+
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+        box-sizing: border-box;
+
+        .RightInfoElem {
+          max-width: 220px;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+
+          color: black;
+
+          text-shadow: 0px 0px 5px #e6e6e6;
+
+          .CheckIcon {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .button {
+          font-size: 17px;
+          background-clip: padding-box;
+          box-sizing: border-box;
+          color: black;
+          font-weight: 500;
+          border: 0;
+          background: $sub-magenta;
+          border-radius: 6px;
+          padding: 12px 1.5rem;
+          cursor: pointer;
+          transition: 0.1s;
+        }
+        
+        .button:hover,
+        .button:active {
+          background: #a4bff7;
+        }
+        
+        .button:focus {
+          outline: none;
+        }
+      }
+    }
+    .ButtonsDiv {
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 27px;
+      box-sizing: border-box;
+
+      .LeftBlockOfButtons {
+        margin-left: 22px;
+        width: 70%;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        color: $sub-magenta;
+        display: flex;
+        align-items: center;
+
+        span {
+          padding: 12px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .Active {
+          color: $magenta;
+        }
+      }
+      .RightBlockOfButtons {
+        .button {
+          font-size: 17px;
+          background-clip: padding-box;
+          box-sizing: border-box;
+          color: $white;
+          font-weight: 500;
+          border: 0;
+          background: $sub-magenta;
+          border-radius: 6px;
+          padding: 12px 1.5rem;
+          cursor: pointer;
+          transition: 0.1s;
+        }
+
+        .button:hover,
+        .button:active {
+          background: $magenta;
+        }
+
+        .button:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
